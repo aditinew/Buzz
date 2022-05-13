@@ -1,0 +1,79 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 1rem;
+	background-color: #fff;
+	border-bottom: 1px solid #e6e6e6;
+	position: sticky;
+}
+
+.header__brand {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.header__brand a {
+	text-decoration: none;
+}
+
+.header__right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.header__right img {
+	width: 2rem;
+	height: 2rem;
+	margin-right: 0.5rem;
+	border-radius: 50%;
+}
+
+.header__right p {
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.headerIcon{
+	margin-right: 15px;
+	height: 100%;
+	border: 1px solid #4d64eb;
+	color: #fff;
+	background-color: #4d64eb;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.friendListIcon{
+	font-size: 32px;
+	font-weight: 600;
+	height: 100%;
+	
+	
+	padding: 6px;
+	
+}
+
+.dropdown{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.btn{
+	border: none;
+	outline: none;
+}

@@ -1,0 +1,115 @@
+.login {
+	height: 100vh;
+	background-color: whitesmoke;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.loginBox {
+	width: 70%;
+	height: 70;
+	display: flex;
+	background-color: #fff;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+	border-radius: 0.5rem;
+}
+
+.loginLeftBox,
+.loginRightBox {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 60px 60px 60px 60px;
+}
+
+.loginDesc1 {
+	font-size: 25px;
+	font-weight: 500;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.loginDesc2 {
+	color: gray;
+	font-size: 18px;
+	padding-bottom: 35px;
+}
+
+.loginBox2 {
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 280px;
+	position: absolute;
+}
+
+.loginInput {
+	border: none;
+	background: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+}
+
+input {
+	width: 100%;
+	overflow: hidden;
+	font-size: 16px;
+	padding: 8px 0;
+	margin: 8px 0;
+}
+
+input[type="checkbox"] {
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.rememberMe {
+	width: 50%;
+	display: flex;
+	gap: 10px;
+}
+
+.checkbox {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	width: 100%;
+	font-size: smaller;
+	color: gray;
+	font-weight: 600;
+	padding-bottom: 25px;
+}
+
+.head {
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.buttonGoogle {
+	max-width: 55%;
+	background-color: #fff;
+	color: magenta;
+	font-weight: bold;
+	border: 2px magenta solid;
+	border-radius: 25px;
+	padding: 10px 10px 10px 10px;
+}
+
+.loginButton {
+	max-width: 70%;
+	background-color: blueviolet;
+	color: #fff;
+	font-weight: bold;
+	border: 2px blueviolet solid;
+	border-radius: 20px;
+	padding: 10px 10px 10px 10px;
+}
+
+img {
+	height: 90px;
+}

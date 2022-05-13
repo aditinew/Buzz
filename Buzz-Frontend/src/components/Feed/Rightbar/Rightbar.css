@@ -1,0 +1,71 @@
+.rightbar {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 30px;
+	height: 100%;
+	padding: 0.8rem;
+	transition: all 0.2s ease-in-out;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.rightbarWrapper {
+	background-color: #fff;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+	padding: 0.8rem;
+}
+
+.rightbarWrapper2 {
+	background-color: #fff;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+	padding: 0.8rem;
+}
+
+.rightbarTitle {
+	font-size: medium;
+	font-weight: bold;
+}
+
+.rightbarContactName {
+	font-size: small;
+	color: gray;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.rightbarProfileImg {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+}
+
+.rightbarContactList {
+	list-style: none;
+}
+
+.rightbarButton {
+	border: none;
+	background-color: #fff;
+	color: rgb(25, 167, 223);
+	font-size: small;
+	font-weight: bold;
+	margin-left: 15px;
+}
+
+.rightbarProfileImgContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.rightbarContact, .rightbarButton {
+    border-radius: 10px;
+    background-color: rgb(240, 245, 245);
+}
+
+.rightbarContact:hover, .rightbarContact:hover .rightbarButton {
+    background-color: rgb(206, 231, 253);
+}

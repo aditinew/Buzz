@@ -1,0 +1,252 @@
+.post__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 0.8rem;
+	border-radius: 0.5rem;
+	background-color: #fff;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+	transition: all 0.2s ease-in-out;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.post__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.post__headerLeft {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	gap: 0.6rem;
+}
+
+.post__headerImage img {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+}
+
+.post__headerProfileName {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #000;
+	margin-bottom: 0;
+}
+
+.post__headerDate {
+	font-size: 0.9rem;
+	font-weight: 400;
+	color: #000;
+	margin-bottom: 0;
+}
+
+.post__headerOptions {
+	cursor: pointer;
+	background-color: #d5d5d5;
+	border-radius: 50%;
+	padding: 5px;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.post__description {
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: #000;
+	margin-top: 5px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 0.6rem;
+}
+
+.post__description img {
+	object-fit: contain;
+	height: 400px;
+}
+
+.post__footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	gap: 1rem;
+	margin-top: 15px;
+}
+
+.post__footerDescription {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.post__footerDescLeft {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+}
+
+.post__footerLikeIcon {
+	background-color: blue;
+	border-radius: 50%;
+	padding: 4px;
+	margin-right: 5px;
+}
+
+.post__footerDislikeIcon {
+	background-color: rgb(255, 30, 0);
+	border-radius: 50%;
+	padding: 4px;
+	margin-right: 5px;
+}
+
+.post__footerDescRight {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+	cursor: pointer;
+}
+
+.post__footerCommentIcon {
+	background-color: rgb(64, 221, 36);
+	border-radius: 50%;
+	padding: 4px;
+	margin-right: 5px;
+}
+
+.post__footerActions {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	border-top: 1px solid rgb(55, 55, 55);
+	border-bottom: 1px solid rgb(55, 55, 55);
+}
+
+.post__likeBtn,
+.post__dislikeBtn,
+.post__reportBtn {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.post__likeBtn:hover,
+.post__dislikeBtn:hover,
+.post__reportBtn:hover {
+	background-color: #f5f6f7;
+	cursor: pointer;
+}
+
+.post__commentForm {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	gap: 0.8rem;
+}
+
+.post__commentForm img {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+}
+
+.post__commentForm input {
+	border: none;
+	border-radius: 1rem;
+	padding: 0.7rem;
+	padding-left: 10px;
+	width: 100%;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #000;
+	background-color: #f5f6f7;
+}
+
+.post__commentForm .Button {
+	width: 15%;
+	height: 100%;
+	border: none;
+	border-radius: 20px;
+	background-color: #001fce;
+	color: #fff;
+	padding: 10px;
+	font-weight: bold;
+	font-family: "Roboto", sans-serif;
+	outline: none;
+	cursor: pointer;
+	flex: 1;
+	transition: all 0.4s ease-in-out;
+}
+
+.post__commentForm input:focus {
+	outline: 1px solid #919090;
+}
+
+.comment {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 0.8rem;
+}
+
+.comment__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	gap: 0.6rem;
+}
+
+.comment__header img {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+}
+
+.comment__headerInfo {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.comment__headerInfoName {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #000;
+	margin-bottom: 0;
+}
+
+.comment__headerInfoTime {
+	font-size: 0.9rem;
+	font-weight: 400;
+	color: #000;
+	margin-bottom: 0;
+	margin-left: 5px;
+}
+
+.comment__headerInfoText {
+	font-size: 1rem;
+	font-weight: 400;
+	color: #000;
+	margin-bottom: 0;
+}
+
+.dropdown-toggle::after {
+	display: none !important;
+}
