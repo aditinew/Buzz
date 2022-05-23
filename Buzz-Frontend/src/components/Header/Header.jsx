@@ -47,7 +47,7 @@ const Header = () => {
 						aria-labelledby="dropdownMenuButton1"
 						style={{width: "350px"}}
 					>
-						{userData.friendRequestsReceived.length > 0 ? (
+						{userData?.friendRequestsReceived.length > 0 ? (
 							suggestion.filter(user => userData?.friendRequestsReceived.includes(user._id)).map((user) => (
 								<Link to={`/${user._id}/user`}>
 									<li className="rightbarContact m-3 p-3">

@@ -34,6 +34,7 @@ export const AuthProvider = ({ children }) => {
 			if (user) {
 				const getUserData = async () => {
 					const token = await auth.currentUser.getIdToken();
+					// console.log(token);
 					await axios
 						.get(`${GLOBAL_URL}/api/auth/profile`, {
 							headers: {
@@ -42,7 +43,8 @@ export const AuthProvider = ({ children }) => {
 						})
 						.then((res) => {
 							setUserData(res.data);
-						});
+						})
+						.catch(err=>{console.log(err.response)})
 				};
 				await getUserData();
 				setUser(user);
@@ -72,6 +74,7 @@ export const AuthProvider = ({ children }) => {
 					navigation("/");
 				})
 				.catch((err) => {
+					console.log(err.response);
 					toast.error("You can only login using TTN Email Id...");
 					setUser(null);
 					setUserData(null);

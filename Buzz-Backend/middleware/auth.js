@@ -8,12 +8,13 @@ module.exports = async function (req, res, next) {
         const user = await User.findOne({
             uid: decodedToken.uid
         });
+        // console.log(user);
         if (!user) {
             return res.status(401).send("Unauthorized");
         }
         req.user = user;
         next(); 
     } catch (error) {
-        return res.status(401).send("Unauthorized");
+        return res.status(401).send("invalid token");
     }
 };
